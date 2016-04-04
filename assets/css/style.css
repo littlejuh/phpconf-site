@@ -5430,5 +5430,15 @@ nav.navbar.navbar-default.fixed #menu {
     width: auto;
     height: auto;
 }
-
+/* Sponsor */
+.sponsor h2 {
+    color: #999999;
+}
+.sponsor-container {
+    min-height: 180px;
+    padding: 0em 18em 0em 18em;
+}
+.btn-green {
+    color: #00A859;
+}
 
