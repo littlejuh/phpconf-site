@@ -5423,6 +5423,12 @@ nav.navbar.navbar-default.fixed #menu {
     margin-left: 50%;
     text-align: left;
 }
-
+/* Rack ajustes menu */
+.navbar-brand img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
 
 
