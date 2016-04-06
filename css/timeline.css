@@ -118,19 +118,19 @@
 }
 
 .timeline-badge.success {
-    background-color: #3f903f !important;
+    background-color: #027e44 !important;
 }
 
 .timeline-badge.warning {
-    background-color: #f0ad4e !important;
+    background-color: #FFF212 !important;
 }
 
 .timeline-badge.danger {
-    background-color: #d9534f !important;
+    background-color: #ED3237 !important;
 }
 
 .timeline-badge.info {
-    background-color: #5bc0de !important;
+    background-color: #2c3e50 !important;
 }
 
 .timeline-title {

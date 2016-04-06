@@ -1,528 +1,737 @@
 <!DOCTYPE html>
-<html lang="pt_BR" xmlns:og="http://opengraphprotocol.org/schema/">
+<html lang="en">
+
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Conferência PHPRS | 07 maio 2016</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/plugins.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/color/yellow.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet'
-          type='text/css'>
-    <link href="assets/type/icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
+    <style>
+        .main-image {
+            background: url('img/usina.jpg');
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body onLoad="location.href='#home'">
-<div class="body-wrapper">
 
-    <nav class="yamm navbar navbar-default default" role="navigation">
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">
+                <img style="margin-top: -25px;" src="img/logo-horizontal-white-sm.png" alt=""/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">Home</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio">Palestrantes</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#tickets">Ingressos</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#schedule">Programação</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#locale">Local</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header class="main-image">
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="" alt="">
+
+                <div class="intro-text">
+                    <img src="img/logo_completo.png" class="img-responsive" alt="">
+
+                    <div class="about">
+
+                        <p>Um <strong>evento</strong> para a <strong>comunidade</strong> de Desenvolvedores
+                            <strong>PHP</strong> do Rio Grande do Sul, voltado para o <strong>crescimento
+                                profissional</strong>,
+                            <strong>troca de experiências</strong> e <strong>networking</strong>.
+                            Fortalecendo a <strong>linguagem</strong> e o <strong>mercado de trabalho</strong>.</p>
+                    </div>
+                    <h2>07 de Maio, Porto Alegre / RS </h2>
+
+                    <h1>
+                        <a href="#tickets" class="btn btn-lg btn-primary" role="button">Inscreva-se</a>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Palestrantes</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-pablo.png" class="img-responsive" alt="">
+
+                    <div class="locale"><h4>Pablo Dall'Oglio</h4><h5>Porto Alegre/RS</h5></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-eduardo.png" class="img-responsive" alt="">
+
+                    <div class="locale"><h4>Eduardo Pittol</h4><h5>Porto Alegre/RS</h5></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-andre.png" class="img-responsive" alt="">
+
+                    <div class="locale"><h4>André Gugliotti</h4><h5>Porto Alegre/RS</h5></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-leonn2.png" class="img-responsive" alt="">
+
+                    <div class="locale"><h4>Leonn Leite</h4><h5>Brasília/DF</h5></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-galvao.jpg" class="img-responsive" alt="">
+
+                    <div class="locale"><h4>Er Galvão</h4><h5>Porto Alegre/RS</h5></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-undefined.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 portfolio-item">
+                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/speakers/speaker-undefined.png" class="img-responsive" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="success" id="tickets">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Garanta seu Ingresso + Camiseta!</h2>
+                <hr class="star-light">
+                <iframe src="http://www.eventick.com.br/conferencia-phprs-2016/embedded" vspace="0" hspace="0"
+                        marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true" frameborder="0"
+                        height="280px" width="100%"></iframe>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Programação</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge">08:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Abertura</h4>
+
+                                    <p>
+                                        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 30min</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Apresentação dos palestrantes e Abertura do evento</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge info">09:00</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Keynote - Desafios de ERP com PHP</h4>
+
+                                    <p>
+                                        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 50min</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Nesta palestra buscaremos compartilhar experiências adquiridas após 20 anos
+                                        desenvolvendo softwares ERP com PHP. Trocaremos ideias sobre desafios em design,
+                                        modelagem, arquitetura, segurança, desempenho, dentre outros fatores importantes
+                                        na construção de um sistema de gestão com PHP.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge success">10:00</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Coffe Break (Vai dar Bolo!)</h4>
+
+                                    <p>
+                                        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 30min</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="timeline-badge info">10:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Microserviços com PHP</h4>
+
+                                    <p>
+                                        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 50min</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge info">11:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Segurança PHP em 2016</h4>
+
+                                    <p>
+                                        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 30min</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>O mercado de Segurança PHP tem passado por importantes mudanças em virtude de
+                                        novas funcionalidades introduzidas na versão 7 da linguagem, bem como outros
+                                        fatores, e portanto o que era considerado correto há 1-2 anos hoje já é
+                                        discutível ou mesmo comprovadamente inadequado. Descubra todas as novas questões
+                                        de sergurança para aplicações PHP e como isso vai impactar a sua aplicação.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="timeline-badge info">12:00</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title"> Aguarde ... </h4>
+
+                                    <p>
+                                        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 30min</small>
+                                    </p>
+                                    <div class="timeline-body">
+                                        <p>Rafael Ehlers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge success">12:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Almoço</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Todos estarão convidados a ir no restaurante próximo do Senac.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="timeline-badge info">14:00</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Criando um ambiente de desenvolvimento WordPress com o
+                                        Composer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Como utilizar o poder do Composer para criar um ambiente de desenvolvimento de
+                                        sites com o WordPress.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge info">15:00</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Aguarde...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>André Gugliotti</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge success">16:00</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Coffee Break</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge info">16:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Behat, o framework BDD para PHP</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Por diversos fatores, o desenvolvimento ágil está cada vez mais presente no
+                                        cenário atual e é recomendado em praticamente todos os casos. Ligado a essa
+                                        evolução foi criada uma metodologia de desenvolvimento chamada BDD
+                                        (behavior-driven development), também conhecida como evolução do TDD
+                                        (Test-driven development).
+                                        Veremos essa metodologia aplicada no PHP com o framework Behat, testando
+                                        exatamente os exemplos escritos pelo próprio usuário. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="timeline-badge info">17:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Aguarde...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge success">18:30</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Encerramento</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Sorteios e agradecimentos.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="locale">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Como chegar</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6908.109806419881!2d-51.23087606511231!3d-30.035282699999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197906a9d397f5%3A0x514b4935e97fbf4d!2sFaculdade+de+Tecnologia+Senac%2C+CampusI!5e0!3m2!1spt-BR!2sbr!4v1459477990882"
+                    height="400" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</section>
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
         <div class="container">
-            <div class="navbar-header">
-                <div class="basic-wrapper"><a class="btn responsive-menu" data-toggle="collapse"
-                                              data-target=".navbar-collapse"><i></i></a>
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Organização</h3>
 
-                    <div class="navbar-brand">
-                        <a href="/">
-                            <img src="assets/images/conferenciaPHPRS2016-logo.png" alt=""
-                                 data-src="assets/images/conferenciaPHPRS2016-logo.png"
-                                 data-ret="assets/images/conferenciaPHPRS2016-logo.png" class="retina"/>
-                        </a>
-                    </div>
-
-
+                    <p><img src="img/phprs_logo_pq.png" alt=""></p>
                 </div>
-                <!-- /.basic-wrapper -->
-            </div>
-            <!-- /.navbar-header -->
+                <div class="footer-col col-md-4">
+                    <h3>Compartilhe o evento</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/events/595205633978234/"
+                               class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Quer apoiar?</h3>
 
-            <nav class="collapse navbar-collapse" id="menu">
-                <ul class="nav navbar-nav">
-                    <li class="current"><a href="#home" class="dropdown-toggle js-activated">Home <span
-                            class="caret"></span></a>
-                    </li>
-                    <li><a href="#tickets" class="dropdown-toggle js-activated">Ingressos<span
-                            class="caret"></span></a>
-                    </li>
-                    <li><a href="#speakers" class="dropdown-toggle js-activated">Palestrantes<span
-                            class="caret"></span></a>
-                    </li>
-                    <li><a href="#schedule" class="dropdown-toggle js-activated">programação<span class="caret"></span></a>
-                    </li>
-
-                    <li><a href="#sponsors" class="dropdown-toggle js-activated">patrocinadores<span class="caret"></span></a>
-                    </li>
-
-                    <li><a href="#map" class="dropdown-toggle js-activated">Como chegar<span
-                            class="caret"></span></a>
-                    </li>
-
-
-                </ul>
-                <!-- /.navbar-nav -->
-            </nav>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!-- /.navbar -->
-
-    <div class="light-wrapper" id="home">
-        <div class="tp-fullscreen-container revolution">
-
-            <div data-transition="fade" class="tp-fullscreen main-banner">
-                <div class="wrap-content-banner">
-                    <div class="centered text-banner">
-
-                        <div data-easing="Sine.easeOut" data-endspeed="100" data-start="2100" data-speed="600"
-                             data-y="150" data-x="20" class="tp-caption sft start"
-                             style="left: 103.907px; top: 140.6px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                            <img alt="" src="assets/images/conferenciaPHPRS2016.png"
-                                 style="max-width: 100%; max-height: 421.8px;">
-                        </div>
-
-                        <div data-easing="Sine.easeOut" data-endspeed="100" data-start="1500" data-speed="900"
-                             data-y="387" data-x="center" class="tp-caption lead light-layer sfb text-center start"
-                             style="min-height: 0px; min-width: 0px; line-height: 21px; border-width: 0px; margin: 0px 0px 14px; padding: 14px; letter-spacing: 0px; font-size: 20px; left: 441px; top: 270.9px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                            <p class="tp-caption main-title">
-                                07 de Maio • Senac-RS
-                            </p>
-
-                            <p>Um <strong>evento</strong> para a <strong>comunidade</strong> de Desenvolvedores
-                                <strong>PHP</strong> do Rio Grande do Sul, voltado para o <strong>crescimento
-                                    profissional</strong>,
-                                <strong>troca de experiências</strong> e <strong>networking</strong>.
-                                Fortalecendo a <strong>linguagem</strong> e o <strong>mercado de trabalho</strong>.</p>
-                        </div>
-                        <div class="tp-caption lead " data-wow-delay="0.5s">
-                            <a target="_blank" class="btn btn-border"
-                               href="http://www.eventick.com.br/conferencia-phprs-2016">Quero me inscrever!</a>
-
-                        </div>
-                    </div>
+                    <p>Entre em contato conosco! <a href="mailto:contato@danielcramer.com.br">contato@danielcramer.com.br</a>
+                    </p>
                 </div>
             </div>
-            <!-- /.tp-fullscreen-container -->
-        </div>
-        <!-- /.revolution -->
-    </div>
-    <!--/.light-wrapper -->
-
-
-    <div id="tickets" class="dark-wrapper">
-        <div class="container inner">
-            <h3 class="main-title text-center">Garanta já o seu <strong>ingresso</strong></h3>
-            <iframe src="http://www.eventick.com.br/conferencia-phprs-2016/embedded" vspace="0" hspace="0"
-                    marginheight="5"
-                    marginwidth="5" scrolling="auto" allowtransparency="true" frameborder="0" height="280px"
-                    width="100%"></iframe>
-
-        </div>
-        <!--/.container -->
-    </div>
-
-
-    <div id="speakers" class="dark-wrapper">
-        <div class="container inner">
-            <h3 class="main-title text-center">Conheça os <strong>palestrantes</strong></h3>
-
-            <div data-wow-delay="0.3s" data-wow-duration="1s" class="carousel-wrapper wow fadeIn animated"
-                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">
-                <div class="carousel carousel-boxed team owl-carousel owl-theme owl-loaded">
-
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                             style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 100%;">
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-andre.png"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">André Gugliotti</h4>
-
-                                        <p>Trabalha com web desde 2004, especializando-se em comércio
-                                            eletrônico e sendo uma das principais referências em Magento Commerce, com
-                                            três livros
-                                            publicados pela Novatec. Atua no desenvolvimento de empresas, mesclando
-                                            gestão, marketing e
-                                            código, para que elas vendam mais e melhor. É sócio da Clix, empresa de
-                                            lojas virtuais sob
-                                            demanda, onde responde pelo desenvolvimento de produtos.</p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-eduardo.png"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">Eduardo Pittol</h4>
-
-                                        <p>
-                                            Formado em Ciência da Computação. Trabalho com Desenvolvimento Web há 8 anos
-                                            e há 6 com WordPress. Tem no sangue o empreendedorismo. Adora trabalhar em
-                                            cima de modelos de
-                                            negócios com riscos. Empreendendo na sua segunda startup. Ativo na
-                                            comunidade de startups e
-                                            organizador de eventos. Um dos idealizadores do Taquari Valley, uma
-                                            comunidade que fomenta o
-                                            empreendedorismo no Vale do Taquari.
-                                        </p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-leonn.png"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">Leonn Leite</h4>
-
-                                        <p>A Bacharel em sistemas de informação, hoje é arquiteto de software do
-                                            Ministério da Saúde, mas já foi lider de equipe em outras empresas,
-                                            praticante do deboismo. Atuando na área há mais de 10 anos, atualmente é um
-                                            dos evangelistas do PhpDF, já ministrou cursos em alguns estados do Brasil.
-                                            Sócio fundador da empresa Tear Tecnologia e das plataformas EmVista e
-                                            Inkrz.</p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-pablo.png"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">Pablo Dall'Oglio</h4>
-
-                                        <p>
-                                            Mestre em Engenharia de Software pela Unisinos. Conhecido
-                                            como autor de livros sobre PHP pela editora Novatec, já projetou e
-                                            desenvolveu inúmeros softwares de gestão de grande porte. Entusiasta de
-                                            Orientação a Objetos e
-                                            Padrões de Projeto, atualmente trabalha em sua empresa, a Adianti Solutions
-                                            (www.adianti.com.br), onde cria ferramentas de desenvolvimento e presta
-                                            consultoria em projeto e
-                                            arquitetura de software.
-                                        </p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-galvao.jpg"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">Er Galvão Abbott</h4>
-
-                                        <p>
-																						Presidente da ABRAPHP – Associação Brasileira de Profissionais PHP, Diretor
-																						da PHP Conference Brasil, contribui para a tradução da documentação oficial,
-																						atua como Zend Framework Evangelist para o ZTeam da Zend. Possui 20+ anos
-																						desenvolvendo sistemas e aplicações com interface web - 15+ destes com PHP
-																						e 7+ com Zend Framework. Palestrante em eventos nacionais e internacionais,
-																						instrutor de cursos presenciais e a distncia, fundador e líder do GU PHPBR,
-																						fundador original e membro do GU PHPRS.
-                                        </p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-undefined.png"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">???</h4>
-
-                                        <p>
-
-                                        </p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-
-                            <div class="owl-item active" style="width: 24%; margin-right: 1%;">
-                                <div class="item">
-                                    <figure><img alt="" src="assets/images/speackers/speaker-undefined.png"></figure>
-                                    <div class="box text-center">
-                                        <h4 class="post-title">???</h4>
-
-                                        <p>
-
-                                        </p>
-
-                                        <div class="divide5"></div>
-
-                                    </div>
-                                    <!--/.box -->
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.carousel -->
-            </div>
-            <!--/.carousel-wrapper -->
-
-        </div>
-        <!--/.container -->
-    </div>
-
-
-    <div id="schedule" class="light-wrapper section section-schedule">
-
-        <div class="container inner">
-            <h3 class="main-title text-center">Confira a <strong>programação</strong></h3>
-
-          <!--  <h2 align="center">Em construção, aguarde.</h2>-->
-             <ul class="schedule-list">
-                  <li class="schedule-item schedule-item-other" id="schedule-abertura">
-                      <span class="schedule-time">08:30</span>
-
-                      <div class="schedule-slot">
-                          <div class="schedule-activity">Agradecimentos e Instruções do Evento</div>
-                      </div>
-                  </li>
-
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">09:00</span>
-
-                      <div class="schedule-slot">
-                          <div class="schedule-activity schedule-activity">Keynote</div>
-                      </div>
-                  </li>
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">10:00</span>
-
-                      <div class="schedule-slot">
-                          <div class="schedule-activity">Coffee Break</div>
-                      </div>
-                  </li>
-                  <li class="schedule-item schedule-item-other">
-                      <span class="schedule-time">10:30</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">Pablo Dall'Oglio</span>
-
-                          <div class="schedule-activity">Construindo ERP's com PHP: Desafios em design, segurança e
-                              performance
-                          </div>
-                      </div>
-                  </li>
-
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">11:30</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">André Gugliotti</span>
-
-                          <div class="schedule-activity">Soluções open source para comércio eletrônico</div>
-                      </div>
-                  </li>
-
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">12:30</span>
-
-                      <div class="schedule-slot">
-                          <div class="schedule-activity">Almoço</div>
-                      </div>
-                  </li>
-
-                  <li class="schedule-item schedule-item-speaker" id="schedule-wordpress-composer">
-                      <span class="schedule-time">14:00</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">Eduardo Pittol</span>
-
-                          <div class="schedule-activity">Criando um ambiente de desenvolvimento WordPress com o Composer
-                          </div>
-                      </div>
-
-                  </li>
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">15:00</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">???</span>
-
-                          <div class="schedule-activity">A definir</div>
-                      </div>
-
-                  </li>
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">16:00</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">Coffee Break</span>
-                      </div>
-                  </li>
-
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">16:30</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">???</span>
-
-                          <div class="schedule-activity">A definir</div>
-                      </div>
-
-                  </li>
-
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">17:30</span>
-
-                      <div class="schedule-slot">
-                          <span class="schedule-speaker">???</span>
-
-                          <div class="schedule-activity">A definir</div>
-                      </div>
-
-                  </li>
-                  <li class="schedule-item schedule-item-speaker">
-                      <span class="schedule-time">18:30</span>
-
-                      <div class="schedule-slot">
-                          <div class="schedule-activity">Encerramento</div>
-                      </div>
-
-                  </li>
-
-
-              </ul>
         </div>
     </div>
-
-    <div id="sponsors" class="light-wrapper">
-
-        <div class="container inner">
-            <h3 class="main-title text-center">Conheça os <strong>patrocinadores</strong></h3>
-
-            <div class="row sponsor">
-                <h2 class="text-center">Gold</h2>
-
-                <div class="sponsor-container">
-                    <img alt="logo patrocinador gold" src="assets/images/sponsors/sponsor-gold-01.png"
-                         class="img-responsive pull-left">
-                    <img alt="logo patrocinador gold" src="assets/images/sponsors/sponsor-gold-01.png"
-                         class="img-responsive pull-left">
-                    <img alt="logo patrocinador gold" src="assets/images/sponsors/sponsor-gold-01.png"
-                         class="img-responsive pull-left">
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    2016 PHPRS. Todos os direitos reservados.
                 </div>
-            </div>
-            <div class="row sponsor">
-                <h2 class="text-center">Silver</h2>
-
-                <div class="sponsor-container">
-                    <img alt="logo patrocinador gold" src="assets/images/sponsors/sponsor-silver-01.png"
-                         class="img-responsive pull-left">
-                    <img alt="logo patrocinador gold" src="assets/images/sponsors/sponsor-silver-01.png"
-                         class="img-responsive pull-left">
-                    <img alt="logo patrocinador gold" src="assets/images/sponsors/sponsor-silver-01.png"
-                         class="img-responsive pull-left">
-                </div>
-            </div>
-            <div class="row sponsor text-center">
-                <h2>Seja um patrocinador</h2>
-
-                <p>Interessado? Descubra as oportunidades e benefícios.</p>
-                <a class="btn btn-green" href="#">informe-se</a>
             </div>
         </div>
-
     </div>
+</footer>
 
-    <div id="map" class="light-wrapper ">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6908.109806419881!2d-51.23087606511231!3d-30.035282699999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197906a9d397f5%3A0x514b4935e97fbf4d!2sFaculdade+de+Tecnologia+Senac%2C+CampusI!5e0!3m2!1spt-BR!2sbr!4v1459477990882"
-                height="400" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-
-
-    <footer class="footer inverse-wrapper">
-        <div class="sub-footer">
-            <div class="container">
-
-                <div class="col-xs-12 text-center">
-                    <h2>Apoio</h2>
-                    <p>SENAC | Vai dar Bolo</p>
-                </div>
-
-                <div class="col-xs-12 text-center">
-                    <h2>Organização</h2>
-                    <p>PHPRS</p>
-                </div>
-
-                <div class="col-xs-12 text-center">
-
-                    <p>2016 PHPRS. Todos os direitos reservados. </p>
-                </div>
-
-            </div>
-            <!-- .container -->
-        </div>
-        <!-- .sub-footer -->
-    </footer>
-    <!-- /footer -->
-
-
-    <!--/#contact-info -->
-
-
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 </div>
-<!--/.body-wrapper -->
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/js/chart.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Pablo Dall'Oglio</h2>
+                        <hr class="star-primary">
+                        <img src="assets/images/speackers/speaker-pablo.png" class="img-responsive img-centered" alt="">
+
+                        <p>
+                            Mestre em Engenharia de Software pela Unisinos. Conhecido
+                            como autor de livros sobre PHP pela editora Novatec, já projetou e
+                            desenvolveu inúmeros softwares de gestão de grande porte. Entusiasta de
+                            Orientação a Objetos e
+                            Padrões de Projeto, atualmente trabalha em sua empresa, a Adianti Solutions
+                            (www.adianti.com.br), onde cria ferramentas de desenvolvimento e presta
+                            consultoria em projeto e
+                            arquitetura de software.
+                        </p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Eduardo Pittol</h2>
+                        <hr class="star-primary">
+                        <img src="img/speakers/speaker-eduardo.png" class="img-responsive img-centered"
+                             alt="">
+
+                        <p> Formado em Ciência da Computação. Trabalho com Desenvolvimento Web há 8 anos
+                            e há 6 com WordPress. Tem no sangue o empreendedorismo. Adora trabalhar em
+                            cima de modelos de
+                            negócios com riscos. Empreendendo na sua segunda startup. Ativo na
+                            comunidade de startups e
+                            organizador de eventos. Um dos idealizadores do Taquari Valley, uma
+                            comunidade que fomenta o
+                            empreendedorismo no Vale do Taquari.</p>
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>André Gugliotti</h2>
+                        <hr class="star-primary">
+                        <img src="img/speakers/speaker-andre.png" class="img-responsive img-centered" alt="">
+
+                        <p>Trabalha com web desde 2004, especializando-se em comércio
+                            eletrônico e sendo uma das principais referências em Magento Commerce, com
+                            três livros
+                            publicados pela Novatec. Atua no desenvolvimento de empresas, mesclando
+                            gestão, marketing e
+                            código, para que elas vendam mais e melhor. É sócio da Clix, empresa de
+                            lojas virtuais sob
+                            demanda, onde responde pelo desenvolvimento de produtos.</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Leonn Leite</h2>
+                        <hr class="star-primary">
+                        <img src="img/speakers/speaker-leonn.png" class="img-responsive img-centered" alt="">
+
+                        <p>Bacharel em sistemas de informação, hoje é arquiteto de software do
+                            Ministério da Saúde, mas já foi lider de equipe em outras empresas,
+                            praticante do deboismo. Atuando na área há mais de 10 anos, atualmente é um
+                            dos evangelistas do PhpDF, já ministrou cursos em alguns estados do Brasil.
+                            Sócio fundador da empresa Tear Tecnologia e das plataformas EmVista e
+                            Inkrz.</p>
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Er Galvão Abbott</h2>
+                        <hr class="star-primary">
+                        <img src="img/speakers/speaker-galvao.jpg" class="img-responsive img-centered" alt="">
+
+                        <p> Presidente da ABRAPHP – Associação Brasileira de Profissionais PHP, Diretor
+                            da PHP Conference Brasil, contribui para a tradução da documentação oficial,
+                            atua como Zend Framework Evangelist para o ZTeam da Zend. Possui 20+ anos
+                            desenvolvendo sistemas e aplicações com interface web - 15+ destes com PHP
+                            e 7+ com Zend Framework. Palestrante em eventos nacionais e internacionais,
+                            instrutor de cursos presenciais e a distncia, fundador e líder do GU PHPBR,
+                            fundador original e membro do GU PHPRS.
+                        </p>
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Project Title</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
+                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
+                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
+                            only $12!</p>
+                        <ul class="list-inline item-details">
+                            <li>Client:
+                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                </strong>
+                            </li>
+                            <li>Date:
+                                <strong><a href="http://startbootstrap.com">April 2014</a>
+                                </strong>
+                            </li>
+                            <li>Service:
+                                <strong><a href="http://startbootstrap.com">Web Development</a>
+                                </strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/freelancer.js"></script>
 
 </body>
 
