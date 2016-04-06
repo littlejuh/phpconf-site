@@ -16,8 +16,7 @@
 
 }
 
-.about p, h2 {
+.about p {
     margin: 5px;
-    color: #2b2b2b;
     z-index: 0;
 }
