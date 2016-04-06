@@ -11,9 +11,9 @@
 }
 
 .about {
-    background: rgba(255, 255, 255, 0.55) none repeat scroll 0 0;
+    background: rgba(255, 255, 255, 0.80) none repeat scroll 0 0;
     color: #404040 !important;
-
+    padding:5px;
 }
 
 .about p {
