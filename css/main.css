@@ -1,0 +1,11 @@
+.locale {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.8;
+    top:205px;
+    left:0;
+    position: absolute;
+}
+
+.locale h4{
+    margin: 10px 10px 10px 10px;
+}
